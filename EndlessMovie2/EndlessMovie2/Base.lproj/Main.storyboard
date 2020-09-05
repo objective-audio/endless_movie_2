@@ -15,25 +15,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hvv-QN-myh" customClass="AVRoutePickerView">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MqF-Zc-yqM">
                                 <rect key="frame" x="157" y="398" width="100" height="100"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Ep6-rQ-Ll1"/>
-                                    <constraint firstAttribute="height" constant="100" id="SNU-Sz-XIA"/>
+                                    <constraint firstAttribute="height" constant="100" id="qPC-Cf-g9l"/>
+                                    <constraint firstAttribute="width" constant="100" id="v9i-QS-xVn"/>
                                 </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="beginMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7yH-YT-nG9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Hvv-QN-myh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7o8-XW-HGa"/>
-                            <constraint firstItem="Hvv-QN-myh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MsR-zG-pv4"/>
+                            <constraint firstItem="MqF-Zc-yqM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7dh-cj-a0k"/>
+                            <constraint firstItem="MqF-Zc-yqM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="T1F-1n-BYO"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="routePickerView" destination="Hvv-QN-myh" id="geZ-ys-v2b"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
